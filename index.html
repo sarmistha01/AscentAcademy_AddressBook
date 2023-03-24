@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>AscentAcademy_AddressBook</title>
+    <link rel="stylesheet" href="./base.css">
+    <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>-- Address Book --</h1>
+        <form id="searchForm" autocomplete="off">
+            <input type="text" name="search" id="search" placeholder="search...">
+            <p id="contactCount">Placeholder</p>
+        </form>
+        <br>
+    </header>
+    <main class="main">
+        <form id="contactForm" autocomplete="off">
+            <table id="mainTable">
+                <thead>
+                    <tr>
+                        <th>Initials</th>
+                        <th>Firstname</th>
+                        <th>Surname</th>
+                        <th>Contact No.</th>
+                        <th>Address</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td><button class="button" id="addContactButton">Add Contact</button><button
+                                id="editContactButton">Edit
+                                contact</button></td>
+                        <td id="firstNameForm">
+                            <input type="text" name="firstNameInput" id="firstNameInput"
+                                placeholder="type text here..."></td>
+                        <td id="surnameForm">
+                            <input type="text" name="surnameInput" id="surnameInput" placeholder="type text here...">
+                        </td>
+                        <td id="telForm">
+                            <input type="text" name="telInput" id="telInput" placeholder="type text here...">
+                        </td>
+                        <td id="addressForm">
+                            <input type="text" name="addressInput" id="addressInput" placeholder="type text here...">
+                        </td>
+                        <td id="editForm"></td>
+                        <td id="deleteForm"></td>
+                    </tr>
+                </thead>
+                <tbody id=tableData></tbody>
+            </table>
+        </form>
+    </main>
+    <footer class="foot">
+        <p>&copy; @sarmistha</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
